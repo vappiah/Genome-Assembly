@@ -11,6 +11,8 @@ fastp -q 20 -u 20 -l 50 -j SRR10903402_report.json -i fastq/raw_reads/SRR1090340
 
 fastp -q 20 -u 20 -l 50 -j SRR10971381_report.json -i fastq/raw_reads/SRR10971381_r1.fq.gz -I fastq/raw_reads/SRR10971381_r2.fq.gz -o fastq/trimmed_reads/SRR10971381.trimmed.r1.fq.gz -O fastq/trimmed_reads/SRR10971381.trimmed.r2.fq.gz
 
+mv *.json fastp_reports
+
 
 #-i forward reads
 #-r reverse reads
